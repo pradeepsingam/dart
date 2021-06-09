@@ -1,0 +1,18 @@
+import 'dart:io';
+
+void main() {
+  var age, gender;
+
+  print('Please Enter you age :');
+  age = stdin.readLineSync();
+  age = int.parse(age);
+
+  print('Please Enter your Gender : M/F only');
+  gender = stdin.readLineSync();
+
+  if (age >= 18) {
+    gender == 'M' || gender == 'm' ? print('Room NO - 05') : print('ROOM NO 6');
+  } else {
+    print('You are Not Eligible');
+  }
+}
