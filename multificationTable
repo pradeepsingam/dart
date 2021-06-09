@@ -1,0 +1,20 @@
+import 'dart:io';
+
+void main(){
+
+  var i=1, t, n;
+  print('Enter the Table : ');
+  t=stdin.readLineSync();
+  t=int.parse(t);
+  print('Limit : ');
+  n=stdin.readLineSync();
+  n=int.parse(n);
+
+
+
+
+  do {
+    print(t.toString() + ' X ' + i.toString() + ' = ' + (i*t).toString() );
+    i++;
+  } while (i<=n);
+}
